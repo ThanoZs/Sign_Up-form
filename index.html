@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form_</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <div class="video-container">
+        <video autoplay muted loop>
+            <source src="assets/sea.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+    </div>
+
+
+    <div id="details">
+        <form action="/action_page.php">
+        <h1>SIGN UP</h1>
+        <br>
+        
+
+        <input type="text" placeholder="Enter your name" required><br><br>
+        <input type="tel" name="telphone"  pattern="[0-9]{10}"  title="Ten digits code" required placeholder="Enter your phone number"/>  <br><br>
+        <input type="text" placeholder="Enter your email"required><br><br>
+        <input type="password" placeholder="Enter your password"required><br><br>
+
+        <label for="dob" style="color: white;">Date of Birth:</label>
+        <input type="date" id="dob" name="dob">
+   
+        
+        <p>Gender</p>
+        <div class="rad">
+            <input type="radio" name ="a "required>Male 
+            <input type="radio" name ="a "required>Female 
+            <input type="radio" name ="a "required>Other
+        </div>
+        <br style="height: 1*x;">
+        <button id="signup">Sign up</button><br><br>
+        <footer id="fut">Already have an account?Log in</footer>
+        
+    </form>
+</div>
+</body>
+</html>
